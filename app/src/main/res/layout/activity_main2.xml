@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/activitystart"
+
+    android:layout_height="match_parent"
+    android:background="#FFCDD2"
+    tools:context=".MainActivity2">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/startactivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/nav"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/nav_f"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/shooping11"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:src="@drawable/sahm"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/shooping"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:src="@drawable/carticon_f" />
+
+
+                    <ImageView
+                        android:id="@+id/book"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:src="@drawable/baseline_menu_book_24" />
+
+                    <ImageView
+                        android:id="@+id/book22"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:src="@drawable/sahm"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/favorit"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:src="@drawable/vivoret" />
+
+                    <ImageView
+                        android:id="@+id/favorit22"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:src="@drawable/sahm"
+                        android:visibility="gone" />
+
+
+                    <ImageView
+                        android:id="@+id/account"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:src="@drawable/acounticon" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/account22"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_34sdp"
+                        android:src="@drawable/sahm" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:id="@+id/sahm"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/floot_hom"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/homeee"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/sahm" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/home1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/carticon_f" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/book11"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/baseline_menu_book_24" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/favorit11"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/vivoret" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/accunt11"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/acounticon" />
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
